@@ -9,6 +9,27 @@ export class RecipeComponent implements OnInit {
 
   constructor() { }
 
+  //recipe categories
+  mainCourse() {}
+
+  sideDish() {}
+
+  dessert() {}
+
+  appetizer() {}
+
+  salad() {}
+
+  breakfast() {}
+
+  soup() {}
+
+  sauce() {}
+
+  snack() {}
+
+  drinks() {}
+
   ngOnInit(): void {
   }
 

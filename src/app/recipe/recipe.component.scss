@@ -1,0 +1,210 @@
+section {
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+
+//recipe categories
+.categories {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    p {
+        margin-bottom: 5px;
+        display: block;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    li {
+        font-size: 15px;
+        color: #030202;
+        cursor: pointer;
+    }
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    margin: 60px auto 20px auto;
+    border-bottom: 1px solid #030202;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+//recipies list
+.recipies {
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 70px;
+
+    li {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 5px lightgray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+//recipy details
+.details {
+    width: 50%;
+    height: inherit;
+    background-color: #F5F9FC;
+    padding: 30px;
+    overflow: hidden;
+
+    h1 {
+        font-weight: normal;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .rating {
+        margin-bottom: 20px;
+        font-size: 14px;
+        display: block;
+    }
+
+    .description {
+        font-size: 13px;
+        margin-bottom: 20px;
+        color: #2D2D2C;
+    }
+
+    .info {
+        div {
+            margin-bottom: 5px;
+            color: #2D2D2C;
+            font-weight: lighter;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: bold;
+
+            span {
+                font-weight: normal;
+                font-style: oblique;
+            }
+        }
+    }
+}
+
+//recipy image
+.images {
+    width: 50%;
+    height: inherit;
+    background-image: url(./header.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+//1200px and larger
+@media screen and (min-width: 1200px) {
+    //recipie categories
+    .categories {
+        p {font-size: 25px;}
+
+        li {font-size: 20px;}
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    //recipies
+    .recipies {
+        li {
+            height: 450px;
+        }
+    }
+
+    //recipie description
+    .details {
+        padding: 50px;
+
+        h1 {font-size: 40px;}
+
+        .rating {font-size: 20px;}
+
+        .description {font-size: 20px;}
+
+        .info {
+            p {font-size: 18px;}
+        }
+    }
+}
+
+//900px and lower
+@media screen and (max-width: 900px) {
+    //recipies
+    .recipies {
+        padding: 10px 10px;
+    }
+
+    //descriptions
+    .details {
+        .info {
+            p {font-size: 13px;}
+        }
+    }
+}
+
+//600px and lower 
+@media screen and (max-width: 600px) {
+    //categories
+    .categories {
+        justify-content: unset;
+
+        li {
+            width: fit-content;
+            font-size: 10px;
+            margin-bottom: 5px;
+            margin-right: 15px;
+        }
+    }
+
+    //recipies
+    .recipies {
+        padding: 10px 0px;
+        li {
+            flex-direction: column-reverse;
+            height: fit-content;
+        }
+    }
+
+    //dish image
+    .images {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    //dish detail
+    .details {
+        width: 100%;
+        padding: 10px;
+
+        h1 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            margin-bottom: 10px;
+        }
+    }
+}

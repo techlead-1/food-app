@@ -1,7 +1,8 @@
 <section>
     <!--categories-->
-    <ul>
-        <!--<li (click)="mainCourse()">Main course</li>
+    <ul class="categories">
+        <p>Filter by categories:</p>
+        <li (click)="mainCourse()">Main course</li>
         <li (click)="sideDish()">Side dish</li>
         <li (click)="dessert()">Dessert</li>
         <li (click)="appetizer()">Appetizer</li>
@@ -10,6 +11,44 @@
         <li (click)="soup()">Soup</li>
         <li (click)="sauce()">Sauce</li>
         <li (click)="snack()">Snack</li>
-        <li (click)="drink()">Drink</li>-->
+        <li (click)="drinks()">Drink</li>
+    </ul>
+
+
+    <h1 class="heading">Recipies</h1>
+
+    <!--recipies list-->
+    <ul class="recipies">
+        <li>
+            <!--dish details-->
+            <div class="details">
+                <!--dish name-->
+                <h1>Dish Name</h1>
+
+                <!--ratings-->
+                <span class="rating">Rating: 3 of 5</span>
+
+                <!--dish description-->
+                <p class="description">Orange and cream chease</p>
+
+                <!--dish info-->
+                <div class="info">
+                    <div>
+                        <p>Time:
+                          <span>mins</span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>Ingredients:
+                          <span>ingredients</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--dish image-->
+            <div class="images"></div>
+        </li>
     </ul>
 </section>
