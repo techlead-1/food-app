@@ -11,17 +11,17 @@ export class RecipeService {
   constructor(private http: HttpClient) { }
 
   //api endpoints
-  defaulEndpoint: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=cake&limit=1500'
-  mainCourse: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=main%20course&limit=1500'
-  sideDish: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=side%20dish&limit=1500'
-  dessert: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=dessert&limit=1500'
-  appetizer: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=appetizer&limit=1500'
-  salad: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=salad&limit=1500'
-  drink: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=drink&limit=1500'
-  breakfast: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=breakfast&limit=1500'
-  soup: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=soup&limit=1500'
-  snack: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=snack&limit=1500'
-  sauce: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=sauce&limit=1500'
+  defaulEndpoint: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=cake&limit=50'
+  mainCourse: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=main%20course&limit=50'
+  sideDish: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=side%20dish&limit=50'
+  dessert: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=dessert&limit=50'
+  appetizer: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=appetizer&limit=50'
+  salad: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=salad&limit=50'
+  drink: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=drink&limit=50'
+  breakfast: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=breakfast&limit=50'
+  soup: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=soup&limit=50'
+  snack: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=snack&limit=50'
+  sauce: string = 'https://api.spoonacular.com/food/search?apiKey=337c6995ce284e6d9f15bfa245279bf5&query=sauce&limit=50'
 
 
   //get dishes services
