@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipeService } from '../recipe.service';
 
 @Component({
   selector: 'app-recipe',
@@ -7,30 +8,134 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private fetch: RecipeService) { }
 
+  recipes: any;
+  food: any;
+  data:any;
+  error:string = 'Request Failed: please try again later. If this continues contact the developer by clicking on the navigation link "Developer"'
+  timeout:string = 'Request Timeout: please try again later and if the problem continues, contact the developer by clicking on the navigation link "Developer'
+  
+  
   //recipe categories
-  mainCourse() {}
+  mainCourse() {
+    this.fetch.getMainCourse().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
+  }
 
-  sideDish() {}
+  sideDish() {
+    this.fetch.getSideDishes().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
+  }
 
-  dessert() {}
+  dessert() {
+    this.fetch.getDessert().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
+  }
 
-  appetizer() {}
+  appetizer() {
+    this.fetch.getAppetizer().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
+  }
 
-  salad() {}
+  salad() {
+    this.fetch.getSalad().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
+  }
 
-  breakfast() {}
+  breakfast() {
+    this.fetch.getBreakfast().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
+  }
 
-  soup() {}
+  soup() {
+    this.fetch.getSoup().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
+  }
 
-  sauce() {}
+  sauce() {
+    this.fetch.getSauce().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
+  }
 
-  snack() {}
+  snack() {
+    this.fetch.getSnack().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
+  }
 
-  drinks() {}
+  drinks() {
+    this.fetch.getDrink().subscribe(
+      (response) => {
+      this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results},
+      (error) => {alert(this.error)}
+    )
+  }
 
   ngOnInit(): void {
+    this.fetch.getDishes().subscribe(
+      (response) => {
+        this.recipes = response;
+        this.food = this.recipes.searchResults;
+        this.data = this.food[0].results
+      },
+      (error) => {alert(this.error)}
+    )
   }
 
 }
