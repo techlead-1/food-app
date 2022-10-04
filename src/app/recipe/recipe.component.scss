@@ -31,10 +31,15 @@ section {
 .heading {
     text-align: center;
     font-weight: bold;
-    margin: 60px auto 20px auto;
+    margin: 60px auto 0px auto;
     border-bottom: 1px solid #030202;
     padding-bottom: 5px;
     width: fit-content;
+}
+
+h3 {
+    font-size: 15px;
+    margin-bottom: 30px;
 }
 
 //recipies list
@@ -47,7 +52,7 @@ section {
     li {
         width: 100%;
         height: 300px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         box-shadow: 0px 0px 5px lightgray;
         display: flex;
         justify-content: space-between;
@@ -65,19 +70,19 @@ section {
 
     h1 {
         font-weight: normal;
-        margin-bottom: 20px;
-        font-size: 30px;
+        margin-bottom: 10px;
+        font-size: 25px;
     }
 
     .rating {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 14px;
         display: block;
     }
 
     .description {
         font-size: 13px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         color: #2D2D2C;
     }
 
@@ -104,7 +109,6 @@ section {
 .images {
     width: 50%;
     height: inherit;
-    background-image: url(./header.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

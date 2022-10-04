@@ -14,41 +14,23 @@
         <li (click)="drinks()">Drink</li>
     </ul>
 
-
-    <h1 class="heading">Recipies</h1>
+    <h1 class="heading">Recipes</h1>
+    <h3>Results: {{ recipes.totalResults }} recipies</h3>
 
     <!--recipies list-->
     <ul class="recipies">
-        <li>
+        <li *ngFor="let recipe of data">
             <!--dish details-->
             <div class="details">
                 <!--dish name-->
-                <h1>Dish Name</h1>
-
-                <!--ratings-->
-                <span class="rating">Rating: 3 of 5</span>
+                <h1>{{ recipe.name }}</h1>
 
                 <!--dish description-->
-                <p class="description">Orange and cream chease</p>
-
-                <!--dish info-->
-                <div class="info">
-                    <div>
-                        <p>Time:
-                          <span>mins</span>
-                        </p>
-                    </div>
-
-                    <div>
-                        <p>Ingredients:
-                          <span>ingredients</span>
-                        </p>
-                    </div>
-                </div>
+                <div class="description" innerHtml = "{{ recipe.content | slice:0:500 }}"></div>
             </div>
 
             <!--dish image-->
-            <div class="images"></div>
+            <div class="images" style="background-image: url({{ recipe.image }})"></div>
         </li>
     </ul>
 </section>
