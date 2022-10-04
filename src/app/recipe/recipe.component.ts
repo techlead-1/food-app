@@ -13,7 +13,7 @@ export class RecipeComponent implements OnInit {
   recipes: any;
   food: any;
   data:any;
-  error:string = 'Request Failed: please try again later. If this continues contact the developer by clicking on the navigation link "Developer"'
+  error:string = 'Request Failed: our API plan only allows a certain amount of request per day and we have hit that limit. Please try again in 24hours'
   timeout:string = 'Request Timeout: please try again later and if the problem continues, contact the developer by clicking on the navigation link "Developer'
   
   
